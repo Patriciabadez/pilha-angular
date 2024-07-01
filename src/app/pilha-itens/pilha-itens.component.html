@@ -1,0 +1,22 @@
+<div class="container">
+  <h4>Pilha 1</h4>
+
+  <div class="input-container">
+    <input type="text" [(ngModel)]="itemPilha" placeholder="Adicionar item...">
+    <button (click)="adicionarItem()">Push</button>
+  </div>
+
+  <div class="list-container">
+    <ul class="item-list">
+      @for (item of pilha; track pilha) {
+      <li>{{item}}</li>
+      }
+    </ul>
+
+    <button (click)="removerItemPilha()" class="btn">Pop</button>
+    @if(mensagemAoRemoverItem){
+    <p class="message">{{mensagemAoRemoverItem}}</p>}
+  </div>
+</div>
+
+<app-pilha></app-pilha>

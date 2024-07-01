@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="item-container">
+    <h4>Tamanho:
+      <input type="text" [value]="tamanhoPilha" readonly>
+    </h4>
+  </div>
+  <div class="item-container">
+    <h4>Vazio:
+      <input type="text" [value]="estaVazia ? 'Sim' : 'Não'" readonly>
+    </h4>
+  </div>
+
+  <div class="item-container">
+    <h4>Itens:
+      <input type="text" [value]="pilha.join(',')" readonly>
+    </h4>
+  </div>
+
+  <div class="item-container">
+    <h4>Capacidade:
+      <input type="number" [(ngModel)]="capacidadeMaxima" (ngModelChange)="onCapacidadeChange()"
+        placeholder="Capacidade Máxima">
+    </h4>
+  </div>
+
+</div>

@@ -1,0 +1,16 @@
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+}
+.item-container {
+  display: flex;
+  gap: 10px;
+}
+
+.item-container h4 {
+  background-color: #f0f0f0;
+}
